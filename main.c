@@ -29,10 +29,8 @@ int main(void)
 			while ((TWCR & (1<<TWINT)) == 0);
 		}
 		//send stop signal
-		void TWIStop(void)
-		{
-			TWCR = (1<<TWINT)|(1<<TWSTO)|(1<<TWEN);
-		}
+		
+		
 
 
 	} // end of while
